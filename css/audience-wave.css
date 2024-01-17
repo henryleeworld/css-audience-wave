@@ -1,0 +1,3070 @@
+html {
+    font-size: 10px;
+}
+@media screen and (min-height: 350px) {
+    html {
+        font-size: 11px;
+    }
+}
+@media screen and (min-height: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media screen and (min-height: 500px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 8px;
+    }
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5fccd;
+    overflow: hidden;
+}
+.stands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stands_text {
+    position: absolute;
+    top: 1rem;
+    left: 1.6rem;
+    width: 30rem;
+    color: #80c0a1;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.stands_text:before,
+.stands_text:after {
+    content: "波浪舞";
+    position: absolute;
+}
+.stands_text:before {
+    left: -0.3rem;
+    color: #419197;
+}
+.stands_text:after {
+    left: -0.6rem;
+    color: #12486b;
+}
+.stands_items-wrapper {
+    position: relative;
+    top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 105rem;
+}
+.stands_items-wrapper:before {
+    content: "";
+    position: absolute;
+    top: -22rem;
+    left: -50%;
+    width: 200%;
+    height: 20rem;
+    background: linear-gradient(#fff -200%, #78d6c6);
+}
+.stands_items-wrapper:after {
+    content: "";
+    position: absolute;
+    bottom: -21.8rem;
+    left: -50%;
+    width: 200%;
+    height: 20rem;
+    background: linear-gradient(#000038 -200%, #80c0a1);
+}
+.stands_item {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    padding: 0 0.1rem;
+    list-style: none;
+}
+.stands_item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -1.8rem;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(#78d6c6, #919ea3);
+}
+.stands_item:hover .stands_character,
+.stands_item:has(+ li:is(:hover, :focus-within)) .stands_character,
+.stands_item:is(:hover, :focus-within) + li .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character {
+    top: -40%;
+}
+.stands_item:hover .stands_body,
+.stands_item:has(+ li:is(:hover, :focus-within)) .stands_body,
+.stands_item:is(:hover, :focus-within) + li .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body {
+    height: 70%;
+}
+.stands_item:hover .stands_legs,
+.stands_item:has(+ li:is(:hover, :focus-within)) .stands_legs,
+.stands_item:is(:hover, :focus-within) + li .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs {
+    top: 80%;
+}
+.stands_item:hover .stands_leg,
+.stands_item:has(+ li:is(:hover, :focus-within)) .stands_leg,
+.stands_item:is(:hover, :focus-within) + li .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg {
+    top: 0;
+    height: 4rem;
+    border-radius: 0;
+}
+.stands_item:hover div.stands_mouth,
+.stands_item:has(+ li:is(:hover, :focus-within)) div.stands_mouth,
+.stands_item:is(:hover, :focus-within) + li div.stands_mouth,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    div.stands_mouth,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    div.stands_mouth {
+    top: 75%;
+    left: calc(50% - 0.15rem);
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 50% 100%,
+        #ff7d66 40%,
+        #000038 40%,
+        #000038
+    );
+    border: none;
+}
+.stands_item:hover .stands_arm {
+    transform: scaleY(-1.2);
+}
+.stands_item:has(+ li:is(:hover, :focus-within)) .stands_arm,
+.stands_item:is(:hover, :focus-within) + li .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm {
+    transform: scaleY(-1);
+}
+.stands_item:has(+ li + li:is(:hover, :focus-within)) .stands_character,
+.stands_item:is(:hover, :focus-within) + li + li .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character {
+    top: -20%;
+}
+.stands_item:has(+ li + li:is(:hover, :focus-within)) .stands_body,
+.stands_item:is(:hover, :focus-within) + li + li .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body {
+    height: 75%;
+}
+.stands_item:has(+ li + li:is(:hover, :focus-within)) .stands_arm,
+.stands_item:is(:hover, :focus-within) + li + li .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm {
+    transform: scaleY(-0.6);
+}
+.stands_item:has(+ li + li:is(:hover, :focus-within)) .stands_legs,
+.stands_item:is(:hover, :focus-within) + li + li .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs {
+    top: 85%;
+}
+.stands_item:has(+ li + li:is(:hover, :focus-within)) .stands_leg,
+.stands_item:is(:hover, :focus-within) + li + li .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg {
+    top: 0;
+    height: 3rem;
+    border-radius: 0;
+}
+.stands_item:has(+ li + li + li:is(:hover, :focus-within)) .stands_character,
+.stands_item:is(:hover, :focus-within) + li + li + li .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_character {
+    top: -10%;
+}
+.stands_item:has(+ li + li + li:is(:hover, :focus-within)) .stands_body,
+.stands_item:is(:hover, :focus-within) + li + li + li .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body {
+    height: 70%;
+}
+.stands_item:has(+ li + li + li:is(:hover, :focus-within)) .stands_arm,
+.stands_item:is(:hover, :focus-within) + li + li + li .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_arm {
+    transform: scaleY(0.6);
+}
+.stands_item:has(+ li + li + li:is(:hover, :focus-within)) .stands_legs,
+.stands_item:is(:hover, :focus-within) + li + li + li .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_legs {
+    top: 75%;
+}
+.stands_item:has(+ li + li + li:is(:hover, :focus-within)) .stands_leg,
+.stands_item:is(:hover, :focus-within) + li + li + li .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_leg {
+    top: 0;
+    height: 3rem;
+    border-radius: 0;
+}
+.stands_item:has(+ li:is(:hover, :focus-within)) .stands_body,
+.stands_item:has(+ li + li:is(:hover, :focus-within)) .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body {
+    transform: skewX(-5deg);
+}
+.stands_item:is(:hover, :focus-within) + li .stands_body,
+.stands_item:is(:hover, :focus-within) + li + li .stands_body,
+.stands_item:has(
+        + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li
+            + li:is(:hover, :focus-within)
+    )
+    .stands_body,
+.stands_item:is(:hover, :focus-within)
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    + li
+    .stands_body {
+    transform: skewX(5deg);
+}
+.stands_item:nth-child(8n + 2) .stands_body {
+    background: linear-gradient(#80c0a1, #000038 300%);
+}
+.stands_item:nth-child(8n + 2) .stands_body:before {
+    display: none;
+}
+.stands_item:nth-child(8n + 2) .stands_arm {
+    background: linear-gradient(#80c0a1, #000038 200%);
+}
+.stands_item:nth-child(6n + 2) .stands_body {
+    background: linear-gradient(orange, #000038 300%);
+}
+.stands_item:nth-child(6n + 2) .stands_body:before {
+    display: none;
+}
+.stands_item:nth-child(6n + 2) .stands_arm {
+    background: linear-gradient(orange, #000038 200%);
+}
+.stands_item:nth-child(13n + 6) .stands_body {
+    background: linear-gradient(#419197, #000038 300%);
+}
+.stands_item:nth-child(13n + 6) .stands_body:before {
+    display: none;
+}
+.stands_item:nth-child(13n + 6) .stands_arm {
+    background: linear-gradient(#419197, #000038 200%);
+}
+.stands_item:nth-child(12n) .stands_body {
+    background: linear-gradient(#fff, #000038 300%);
+}
+.stands_item:nth-child(12n) .stands_body:before {
+    display: none;
+}
+.stands_item:nth-child(12n) .stands_arm {
+    background: linear-gradient(#fff, #000038 200%);
+}
+.stands_item:nth-child(14n) .stands_body {
+    background: linear-gradient(#eb80b1, #000038 300%);
+}
+.stands_item:nth-child(14n) .stands_body:before {
+    display: none;
+}
+.stands_item:nth-child(14n) .stands_arm {
+    background: linear-gradient(#eb80b1, #000038 200%);
+}
+.stands_item:nth-child(4n) .stands_legs {
+    background-color: #919ea3;
+}
+.stands_item:nth-child(4n) .stands_leg {
+    background: linear-gradient(#fff -400%, #919ea3);
+}
+.stands_item:nth-child(4n + 2) .stands_legs {
+    background-color: #66777f;
+}
+.stands_item:nth-child(4n + 2) .stands_leg {
+    background: linear-gradient(#fff -400%, #66777f);
+}
+.stands_item:nth-child(4n + 3) .stands_legs {
+    background-color: #419197;
+}
+.stands_item:nth-child(4n + 3) .stands_leg {
+    background: linear-gradient(#fff -400%, #419197);
+}
+.stands_item:nth-child(3n) .stands_leg:after {
+    background: linear-gradient(#fff -400%, #000038);
+}
+.stands_item:nth-child(6n) .stands_hair {
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    background: linear-gradient(#fff -400%, #ff7d66);
+}
+.stands_item:nth-child(6n) .stands_face:after {
+    width: 80%;
+    height: 40%;
+    background: linear-gradient(#fff -400%, #ff7d66);
+}
+.stands_item:nth-child(6n + 1) .stands_hair {
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    background: linear-gradient(#fff -400%, #000038);
+}
+.stands_item:nth-child(6n + 1) .stands_face:after {
+    width: 100%;
+    height: 20%;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(#fff -400%, #000038);
+}
+.stands_item:nth-child(6n + 2) .stands_hair {
+    top: -25%;
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    background: linear-gradient(#fff -400%, #66777f);
+}
+.stands_item:nth-child(6n + 2) .stands_face:after {
+    display: none;
+}
+.stands_item:nth-child(6n + 4) .stands_hair {
+    left: 25%;
+    width: 50%;
+    height: 30%;
+    background: linear-gradient(#fff -400%, orange);
+}
+.stands_item:nth-child(6n + 4) .stands_face:after {
+    border-radius: 50%;
+    background: linear-gradient(#fff -400%, orange);
+}
+.stands_item:nth-child(6n + 5) .stands_hair {
+    display: none;
+}
+.stands_item:nth-child(6n + 5) .stands_face:after {
+    display: none;
+}
+.stands_item:nth-child(8n) .stands_face {
+    background: radial-gradient(#f5fccd -100%, #ff7d66 200%);
+}
+.stands_item:nth-child(8n) .stands_face:before {
+    background: linear-gradient(90deg, #f5fccd -50%, #ffa899, #f5fccd 150%);
+}
+.stands_item:nth-child(3n) .stands_eyes:before,
+.stands_item:nth-child(3n) .stands_eyes:after {
+    background: radial-gradient(circle at 0 0, #fff -200%, #12486b);
+}
+.stands_item:nth-child(7n) .stands_eyes:before,
+.stands_item:nth-child(7n) .stands_eyes:after {
+    background-color: #419197;
+}
+.stands_item:nth-child(3n) .stands_nose {
+    left: calc(50% - 0.15rem);
+    width: 0.3rem;
+}
+.stands_item:nth-child(4n) .stands_mouth {
+    width: 30%;
+}
+.stands_item:nth-child(4n + 2) .stands_mouth {
+    width: 20%;
+    left: 40%;
+}
+.stands_chair {
+    width: 100%;
+    height: 100%;
+    background-color: #12486b;
+    border-radius: 1rem;
+    box-shadow: 0 -0.5rem 2rem 0 rgba(0, 0, 56, 0.8);
+}
+.stands_chair:before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+    border-radius: 1rem;
+    border-bottom: 2px solid #419197;
+    background: linear-gradient(transparent, #000038 200%);
+}
+.stands_character {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.3s ease;
+}
+.stands_body {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 60%;
+    height: 55%;
+    border-radius: 1.25rem 1.25rem 0 0;
+    background: linear-gradient(#ff7d66, #000038 300%);
+    transition-property: height, transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.stands_body:before {
+    content: "";
+    position: absolute;
+    top: 1.2rem;
+    right: 0.6rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.stands_arm {
+    position: absolute;
+    top: 15%;
+    width: 30%;
+    height: 3rem;
+    background: linear-gradient(#ff7d66, #000038 200%);
+    transform-origin: 50% 0.5rem;
+    transition: transform 0.3s ease;
+}
+.stands_arm:nth-child(1) {
+    left: -20%;
+    border-radius: 1rem 0 0 0;
+}
+.stands_arm:nth-child(2) {
+    right: -20%;
+    border-radius: 0 1rem 0 0;
+}
+.stands_arm:after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    width: 100%;
+    height: 1rem;
+    border-radius: 0 0 50% 50%;
+    background: linear-gradient(#f5fccd, #ff7d66 200%);
+}
+.stands_legs {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 60%;
+    height: 20%;
+    border-radius: 0 0 1rem 1rem;
+    background-color: #12486b;
+    transition: top 0.3s ease;
+}
+.stands_leg {
+    position: absolute;
+    top: -30%;
+    width: 45%;
+    height: 3rem;
+    background: linear-gradient(#fff -400%, #12486b);
+    border-radius: 1rem 1rem 0 0;
+    transition-property: height, border-radius;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+.stands_leg:nth-child(1) {
+    left: 0;
+}
+.stands_leg:nth-child(2) {
+    right: 0;
+}
+.stands_leg:after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    width: 100%;
+    height: 1rem;
+    border-radius: 40% 40% 10% 10%;
+    background: linear-gradient(#ff7d66, #000038 300%);
+}
+.stands_hair {
+    position: absolute;
+    top: -35%;
+    left: 20%;
+    width: 60%;
+    height: 40%;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(#fff -400%, #000038);
+}
+.stands_face {
+    position: absolute;
+    top: -30%;
+    left: 27.5%;
+    width: 45%;
+    height: 50%;
+    border-radius: 45% 45% 50% 50%;
+    background: radial-gradient(circle at center, #f5fccd, #ff7d66 200%);
+}
+.stands_face:before {
+    content: "";
+    position: absolute;
+    bottom: -0.4rem;
+    left: 25%;
+    width: 50%;
+    height: 0.5rem;
+    border-radius: 0 0 1rem 1rem;
+    background: linear-gradient(90deg, #ff7d66 -50%, #f5fccd, #ff7d66 150%);
+}
+.stands_face:after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    border-radius: 50% 50% 0 50%;
+    background: linear-gradient(#fff -400%, #000038);
+}
+.stands_eyes {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 20%;
+}
+.stands_eyes:before,
+.stands_eyes:after {
+    content: "";
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: radial-gradient(circle at 0 0, #fff -200%, #000038);
+}
+.stands_nose {
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 0.25rem);
+    justify-content: center;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0 0 50% 50%;
+    border-bottom: 2px solid #ff7d66;
+    border-right: 1px solid #ff7d66;
+}
+.stands_mouth {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    justify-content: center;
+    width: 40%;
+    height: 0.5rem;
+    border-radius: 50%;
+    border-bottom: 1px solid #000038;
+    transition-property: left, width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
