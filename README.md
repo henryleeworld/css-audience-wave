@@ -11,5 +11,5 @@ $ git clone
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/NMe3sji.gif)
+![](https://i.imgur.com/I521v1w.gif)
 > 讓人感到團結又整齊的一面
